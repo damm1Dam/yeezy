@@ -1,39 +1,136 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="buystyles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>lazee</title>
+    <title>lazee - Buy Page</title>
+    <link rel="stylesheet" href="buystyles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 1rem;
+        }
+
+        .buyframe {
+            background-color: #ffd500;
+            border: none;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 100%;
+            max-width: 300px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto 1.5rem;
+        }
+
+        .buyframe:hover {
+            background-color: #ffcc00;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        input, select {
+            padding: 0.7rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .BBB {
+            background-color: #28a745;
+            color: white;
+            font-size: 1rem;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .BBB:hover {
+            background-color: #218838;
+        }
+
+        .notification {
+            display: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        /* Slide animations */
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(0); opacity: 1; }
+            to { transform: translateY(-20px); opacity: 0; }
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .buyframe {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+
+            input, select {
+                font-size: 0.95rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="buydiv"><button class="buyframe"><div class="textb"><p class="buyye">BUY HERE</p></div></button></div>
-    <div class="buydiv"></div>
-    <div class="buydiv"><form id="buyForm" onsubmit="return false;">
-        <label class="Fi" for="firstname">First name: </label>
-        <input type="text" name="firstname" class="firstt" required>
-        <br>
-        <label class="Se" for="lastname">Last name: </label>
-        <input type="text" name="lastname" class="secondd" required>
-        <br>
-        <label class="Th" for="email">Email: </label>
-        <input type="email" name="email" class="thirdd" required>
-        <br>
-        <select class="Cou" name="country" id="country" required>
+    <button class="buyframe">BUY HERE</button>
+
+    <form id="buyForm" onsubmit="return false;">
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" required>
+
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
             <option value="">Your Country</option>
-            <option value="nepal">Russia</option>
-            <option value="usa">Belarus</option>
-            <option value="australia">Kazakhstan</option>
+            <option value="russia">Russia</option>
+            <option value="belarus">Belarus</option>
+            <option value="kazakhstan">Kazakhstan</option>
         </select>
-        <br>
+
         <input type="submit" value="Next" class="BBB" onclick="submitForm()">
-        <div id="notification" class="notification">Check your mailbox for the delivery form!</div>
-    </form></div>
+
+        <div id="notification" class="notification">
+            ✅ Check your mailbox for the delivery form!
+        </div>
+    </form>
+
     <script>
         function submitForm() {
             var form = document.getElementById('buyForm');
@@ -51,6 +148,6 @@
                 form.reportValidity();
             }
         }
-        </script>
+    </script>
 </body>
-</html> 
+</html>
