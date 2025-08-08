@@ -1,708 +1,160 @@
-.first {
-    position: fixed;
-    text-align: left;
-    left: 5%;
-    transform: calc(-50% + 90px);;
-    top: 25px;
-    width: 300px;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-    border: 0cap;
-    color: white;
-    font-size: 40px;  
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+}
+
+/* ===== Links ===== */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Creator Tag ===== */
+.creatorr {
+    font-size: 0.9rem;
     text-align: center;
+    margin-bottom: 1rem;
+}
+.creato {
     font-weight: bold;
-    text-shadow: 100px;
-    text-shadow: black;
-    text-shadow: 
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000 ;
-    font-family: "Spongebob-font";
-    transition: transform 0.3s ease;
-    
-    
 }
 
-
-.qrc0de{
-    position:fixed;
-    left: 630px;
-    top: 800px;
-}
-.second {
-    position: fixed;
-    text-align: left;
-    right: 5%;
-    transform: calc(50% + 90px);
-    top: 25px;
-    width: 300px;
-    height:70px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-    border: 0cap;
-    color: white;
-    font-size: 40px;  
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 100px;
-    text-shadow: black;
-    text-shadow: 
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000 ;
-    font-family: "Spongebob-font";
-    transition: transform 0.3s ease;
-    
-    
-}
-.third {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25px;
-    width: 300px;
-    height: 70px;
-    background-color: transparent;
-    border: 0cap;
-    color: white;
-    font-size: 40px;  
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 100px;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    text-shadow: 100px;
-    text-shadow: black;
-    text-shadow: 
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000 ;
-    font-family: "Spongebob-font";
-    transition: transform 0.3s ease;
-    
-}
-.main {
-    background-image: url(-);
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
 }
 
-
-.test {
-    width: 100px;
-    height: 100px;
-    font-size: 100px;
-    position: fixed;
-    left: 50%;
-
-}
-.testTwo {
-    width: 100px;
-    height: 100px;
-    font-size: 100px;
-    position: fixed;
-    left: 50%;
-    top: 900px;
-
-}
-
-.sponge {
-    width: 300px;
-    position:relative;
-    top: 200px;
-    left: 500px;
-    border-radius: 30px
-}
-
-.boots {
-    width: 700px;
-    position:relative;
-    top: 250px;
-    left: 500px;
-    border-radius: 30px
-    
-}
-
-
-.news {
-    width: 405px;
-    height: 824x;
-    position:fixed;
-    top: 200px;
-    left: 1500px;
-}
-
-.linee {
-    position: fixed;
-    width: 5px;
-    left: 15px;
-
-
-
-}
-
-.linee2 {
-    position: fixed;
-    width: 5px;
-    right: 15px;
-
-
-
-}
-
-.codee {
-    position: fixed;
-    top: 800px;
-    right: 60px;
-    width: 180px;
-    height: 75px;
-
-
-}
-
-
-.yel {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-
-
-}
-
-
+/* ===== Text Sections ===== */
 .funfacts {
-    position: fixed;
-    top: 170px;
-    left:60px;
-    font-size: 60px;
-    font-family: "public-sans";
-
-
-
-
-}
-
-
-.bigtext-container {
-    position: fixed;
-
-
-    top: 170px;
-    left: 115px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.bigtext {
-    position: relative;
-    top: 300px;
-    text-align: left;
-    width: 245px;
-    margin-left: 80px; /* Add some margin to make space for linessTwo */
     font-weight: bold;
-
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.bigtext {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+.nameofb {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 
-
-
-.linessTwo {
-
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-
-    height: 100%; /* Make it full height of the parent */
+/* ===== Buttons ===== */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
-
-
-
 
 .purch {
-    position: fixed;
-    top: 270px;
-    width: 456px;
-    height: 421px;
-    left: 450px;
-    border-width: 9px;
-    border-color: black;
-    border-style: solid;
-    background-color: white;
-
-
+    background: transparent;
 }
-
-
-
-.nameofb {
-    position: fixed;
-    top: 120px;
-    left: 490px;
-    font-size: 64px;
-    font-family: "Spongebob-font";
-}
-    
-
-
-
-.bootsss {
-    position: fixed;
-    left: 300px;
-    top: 230px;
-    width: 740px;
-    height: 450px;
-}
-
-
 .buyy {
-    position: fixed;
-    justify-content: center;
-    top: 630px;
-    left: 505px;
-    background-color: rgb(82, 255, 0);
-    width: 343px;
-    height: 105px;
-    border-radius: 30px;
-    font-size: 80px;
-    text-align: center;
-    font-family: "public-sans";
-    text-anchor: middle;
-    border-width: 0;
-    box-shadow: 0 13px 1px rgba(40, 125, 0, 1);
-    transition: transform 0.3s ease;
+    background-color: #ffd500;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.1rem;
 }
-
-.buyy:active {
-    transform: translateY(10px);
-    
-}
-
-.benef {
-    position: fixed;
-    left: 800px;
-    top: 200px;
-    width: 210px;
-    animation: benef 2s infinite;
-
-}
-
-
-
-.secr {
-
-    position: fixed;
-    top: 245px;
-    width: 480px;
-    height: 470px;
-    left: 950px;
-
-
-}
-
-.creatorr {
-    position: fixed;
-    bottom: 0px;
-    left: 900px;
-    font-weight: bold;
-    font-family: "public-sans";
-    
-    
-}
-
-.creato {
-    color: blueviolet;
-    font-weight: bold;
-    font-family: "public-sans";
-    
-
-
-}
-
-
-
-
-
-.miniboots {
-    position: fixed;
-    top: 20px;
-    left: 210px;
-    width: 180px;
-}
-
-
-
-.buttonBen {
-    position: fixed;
-    top: 20px;
-    left: 520px;
-    width: 120px;
-}
-
-
-.cartt {
-    position: fixed;
-    right: 265px;
-    top: 50px;
-}
-
-
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
+.first, .second, .third {
+    background-color: #28a745;
     color: white;
-    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+.first:hover, .second:hover, .third:hover {
+    background-color: #218838;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ===== Buy Page Form ===== */
+#buyForm {
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+#buyForm label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#buyForm input,
+#buyForm select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
 }
 
-.button-link:hover {
-    background-color: #2980b9;
+#buyForm input[type="submit"] {
+    background: #007BFF;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+}
+#buyForm input[type="submit"]:hover {
+    background: #0056b3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-    font-family: Spongebob-font;
-    src: url(fonts/Spongeboy\ Me\ Bob.ttf);
+/* ===== Notification Animation ===== */
+.notification {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-20px); opacity: 0; }
 }
 
-@font-face {
-    font-family: public-sans;
-    src: url(fonts/PublicSans-Bold.ttf);
-}
-
-@keyframes benef {
-    0% {
-        transform: scale(1)
-    }
-    50% {
-        transform: scale(1.2)
-    }
-    100% {
-        transform: scale(1)
-    }
-
-}
-
-@keyframes buyy {
-    0% {
-        transform: top(1)
-    }
-}
-
-@keyframes second {
-    0% {
-        transform: top(1)
-    }
-}
-
-@keyframes third {
-    0% {
-        transform: top(1)
-    }
-}
-
-
-
-
-@media screen and (max-width: 415px) {
-    html, body {
-        overflow-x: hidden !important;
-        position: relative;
-        width: 100%;
-        max-width: 100vw;
-    }
-
-    body {
-        min-height: 100vh;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    * {
-        max-width: 100vw;
-        box-sizing: border-box;
-    }
-
-    .funfacts, .bigtext, .first, .second, .third, .purch, .nameofb, .buyy, .bootsss, .benef, .secr, .miniboots, .starrs, .cartt {
-        position: relative;
-        left: 0;
-        right: 0;
-        transform: none;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
-    }
-    
-
-
-
-    .first {
-        top: -1670px;
-    }
-
-    .second {
-        top: -1670px;
-        left: 120px;
-    }
-
-
-
-
-    .funfacts{
-        top: 1000px;
-    }
-
-    .bigtext{
-        top: 980px;
-    }
-
-    .third{
-        top: -1740px;
-        left: -95px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .first, .second, .third {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    .purch, .secr {
-        width: 90%;
-        max-width: 381px;
-    }
-
-    .bootsss {
-        width: 90%;
-        max-width: 540px;
-        height: auto;
-    }
-
-    .buyy {
-        width: 80%;
-        max-width: 253px;
-    }
-
-    .main {
-        background-image: url(-);
-    }
-    
-    .test {
-        width: 100px;
-        height: 100px;
-        font-size: 100px;
-        position: fixed;
-        left: 50%;
-    }
-
-    .testTwo {
-        width: 100px;
-        height: 100px;
-        font-size: 100px;
-        position: fixed;
-        left: 50%;
-        top: 900px;
-    }
-    
-    .sponge {
-        width: 300px;
-        position:relative;
-        top: 200px;
-        left: 500px;
-        border-radius: 30px
-    }
-    
-    .boots {
-        width: 700px;
-        position:relative;
-        top: -190px;
-        left: 500px;
-        border-radius: 30px
-    }
-    .linee {
-        position: fixed;
-        width: 5px;
-        left: 15px;
-    }
-    
-    .linee2 {
-        position: fixed;
-        width: 5px;
-        right: 15px;
-    }
-    
-    
-    .yel {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-    }
-    
-    .funfacts {
-        bottom: 100px;
-        font-size: 30px;
-        font-family: "public-sans";
-        text-align: center;
-    }
-    
-
-    
-    .linessTwo {
-        position: absolute;
-        top: 1100px;
-        left: 40px;
-        width: 5px;
-        height: 100%;
-        overflow-y: auto; /* Add this line to enable vertical scrolling */
-        max-height: 300px;
-    }
-    
-    .purch {
-        top: -100px;
-        height: 451px;
-        border-width: 9px;
-        border-color: black;
-        border-style: solid;
-        background-color: white;
-    }
-    
-    .nameofb {
-        top: -550px;
-        font-size: 50px;
-        font-family: "Spongebob-font";
-    }
-    
-    .buyy {
-        justify-content: center;
-        top: -750px;
-        background-color: rgb(82, 255, 0);
-        height: 95px;
-        border-radius: 30px;
-        font-size: 80px;
-        text-align: center;
-        font-family: "public-sans";
-        text-anchor: middle;
-        border-width: 0;
-        box-shadow: 0 13px 1px rgba(40, 125, 0, 1);
-        transition: transform 0.3s ease;
-    }
-    
-    .bootsss {
-        top: 8px;
-        transform: scale(1.7);
-    }
-
-    .buyy:active {
-        transform: translateY(10px);
-    }
-    
-    .benef {
-        top: 180px;
-        width: 140px;
-        animation: benef 2s infinite;
-    }
-    
-    .secr {
-        top: 500px;
-        height: 451px;
-    }
-    
-    .creatorr {
-        position: fixed;
-        bottom: 0px;
-        left:130px;
-        font-weight: bold;
-        font-family: "public-sans";
-    }
-    
-    .creato {
-        color: blueviolet;
-        font-weight: bold;
-        font-family: "public-sans";
-    }
-    
-    .miniboots {
-        top: -1840px;
-        left: -190px;
-        width: 100px;
-        height: 60px;
-    }
-    
-    .starrs {
-        top: -1880px;
-        width: 170px;
-    }
-    
-    .cartt {
-        top: -1900px;
-        left: 80px;
-    }
-    
-    .button-link {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-    }
-    
-    .button-link:hover {
-        background-color: #2980b9;
-    }
-
-    body::after {
-        content: '';
-        display: block;
-        height: 250px;
-    }
-
-
-    .benef{
-        top: -1320px;
-        left: 130px;
-        
-
-    }
-
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
     .bigtext {
-        bottom: -200px;
-        width: 80%;
-        font-weight: bold;
-        font-size: 15px;
-        text-align: center;
-        padding: 0 20px;
-        box-sizing: border-box;
+        font-size: 0.95rem;
     }
-
-    
+    .nameofb {
+        font-size: 1.2rem;
+    }
+    .purch img {
+        width: 80px;
+    }
 }
